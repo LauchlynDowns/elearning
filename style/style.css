@@ -1,0 +1,65 @@
+/*css for fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sniglet&family=Sora&display=swap');
+roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+sniglet {
+    font-family: 'Sniglet', cursive;
+}
+
+sora {
+    font-family: 'Sora', sans-serif;
+}
+
+/*css for layout/flexbox*/
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.mainarea {
+    background-color: blue;
+    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    min-width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbarleft {
+    background-color: green;
+    width: 10vw;
+    height: 100vh;
+}
+
+.rightarea {
+    background-color: red;
+    width: 10vw;
+    height: 100vh;
+}
+
+.maincontentsection {
+    width: 80vw;
+    height: 100vh;
+}
+
+.link-container {
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.linkcontainer-link {
+    height: 20vh;
+    width: 10vw;
+}

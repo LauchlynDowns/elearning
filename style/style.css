@@ -1,17 +1,18 @@
 /*css for fonts*/
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sniglet&family=Sora&display=swap');
-roboto {
+.roboto {
     font-family: 'Roboto', sans-serif;
 }
 
-sniglet {
+.sniglet {
     font-family: 'Sniglet', cursive;
 }
 
-sora {
+.sora {
     font-family: 'Sora', sans-serif;
 }
+
 
 /*css for layout/flexbox*/
 
@@ -24,13 +25,14 @@ html, body {
 }
 
 .mainarea {
-    background-color: blue;
+    background-color: #D4ECEE;
     height: 100vh;
     min-height: 100vh;
     width: 100vw;
     min-width: 100vw;
     display: flex;
     justify-content: flex-start;
+ 
 }
 
 .navbarleft {
@@ -39,27 +41,83 @@ html, body {
     height: 100vh;
 }
 
-.rightarea {
-    background-color: red;
-    width: 10vw;
+.maincontentsection {
+    width: 70vw;
     height: 100vh;
 }
 
-.maincontentsection {
-    width: 80vw;
+/*css for right area*/
+.rightarea {
+    background-color: #8FD6A3;
+    width: 20vw;
     height: 100vh;
+    overflow: hidden;
+    background-image: url(../images/rightareabackground.PNG);
+    background-repeat: no-repeat;
+    
 }
+
+.elearninglogo {
+    background-color: #346B31;
+    height: 10vh;
+    width: 19vw;
+    border: 1vh solid #97883A;
+    position: relative;
+    max-width: inherit;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+
+/*container to hold tiles*/
 
 .link-container {
     background-color: white;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
 }
 
-.linkcontainer-link {
+/*container for individual tiles*/
+
+.linkcontainer-link-container {
     height: 20vh;
     width: 10vw;
 }
+
+/*classes for link tile backgrounds*/
+
+.homelink {
+    background-image: url("../images/homepage-icon.PNG");
+    background-size: cover;
+    background-color: #F14141;
+}
+
+.learningzone-icon {
+    background-image: url("../images/learningzone-icon.PNG");
+    background-size: cover;
+    background-color: #54E17C;
+}
+
+.symbolgame-icon {
+    background-image: url("../images/symbolgame-icon.PNG");
+    background-size: cover;
+    background-color: #5663DA;
+}
+
+.numbergame-icon {
+    background-image: url("../images/numbergame-icon.PNG");
+    background-size: cover;
+    background-color: #54E17C;
+}
+
+.helppage-icon {
+    background-image: url("../images/helppage-icon.PNG");
+    background-size: cover;
+    background-color: #54E17C;
+}
+

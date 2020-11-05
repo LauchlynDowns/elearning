@@ -13,6 +13,11 @@
     font-family: 'Sora', sans-serif;
 }
 
+.mainText{ 
+    font-family: 'Sora', sans-serif;
+    font-size: 250%;
+    text-align: center;
+}
 
 /*css for layout/flexbox*/
 
@@ -22,23 +27,25 @@ html, body {
     border: 0;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .mainarea {
     background-color: #D4ECEE;
     height: 100vh;
     min-height: 100vh;
-    width: 100vw;
-    min-width: 100vw;
+    width: 99.8vw;
+    min-width: 98vw;
     display: flex;
     justify-content: flex-start;
- 
 }
 
 .navbarleft {
     background-color: green;
     width: 10vw;
     height: 100vh;
+    border-right: 0.2vw solid black;
+
 }
 
 .maincontentsection {
@@ -47,31 +54,49 @@ html, body {
 }
 
 /*css for right area*/
+
 .rightarea {
     background-color: #8FD6A3;
-    width: 20vw;
+    width: 21.3vw;
     height: 100vh;
     overflow: hidden;
     background-image: url(../images/rightareabackground.PNG);
     background-repeat: no-repeat;
-    
+    border-left: 0.2vw solid black;
 }
 
 .elearninglogo {
     background-color: #346B31;
     height: 10vh;
-    width: 19vw;
+    width: 20vw;
+    border: 1vh solid #97883A;
+    position: relative;
+    max-width: inherit;
+    font-size: 250%;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    padding-top: 3vh;
+}
+
+/*container to hold fact of the day*/
+
+.factofthedaycontainer {
+    background-color: #346B31;
+    height: 20vh;
+    width: 20vw;
     border: 1vh solid #97883A;
     position: relative;
     max-width: inherit;
     font-size: 50px;
     text-align: center;
     color: white;
+    vertical-align: middle;
+    bottom: 0vw;
+    position: absolute;
+    font-size: 200%;
+
 }
-
-
-
-
 
 /*container to hold tiles*/
 
@@ -120,4 +145,3 @@ html, body {
     background-size: cover;
     background-color: #54E17C;
 }
-

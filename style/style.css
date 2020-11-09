@@ -19,9 +19,11 @@
     font-size: 250%;
     text-align: center;
     font-weight: 600;
+
 }
 
 .secondaryText {
+  
     font-family: 'Sora', sans-serif;
     font-size: 150%;
     text-align: center;
@@ -36,6 +38,7 @@ html, body {
     padding: 0;
     margin: 0;
     overflow: hidden;
+    
 }
 
 .mainarea {
@@ -58,6 +61,7 @@ html, body {
 .maincontentsection {
     width: 70vw;
     height: 100vh;
+    
 }
 
 /*css for right area*/
@@ -187,4 +191,41 @@ html, body {
     -webkit-box-shadow: 7px 7px 5px 0 rgb(212,236,238);
     -moz-box-shadow: 7px 7px 5px 0 rgb(212,236,238);
     box-shadow: 7px 7px 5px 0px rgb(212,236,238);
+}
+.gamepreviewcontainer {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.gamepreview {
+    background-color: midnightblue;
+    height: 25vh;
+    width: 23vw;
+    display: flex;
+    align-items: flex-end;
+}
+.button-gamepreview {
+    background-color: #5BDB60;
+    color: black;
+    border: 2px solid black;
+    width: 5vw;
+    height: 5vh;
+    font-size: 150%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 6vh;
+    margin: 0 auto;
+    margin-bottom: 1vh;
+    
+}
+
+.button-gamepreview:hover {
+    -webkit-box-shadow: 2px 2px 2px 0 rgb(0, 0, 0);
+    -moz-box-shadow: 2px 2px 2px 0 rgb(212,236,238);
+    box-shadow: 2px 2px 2px 0px rgb(0, 0, 0);
 }

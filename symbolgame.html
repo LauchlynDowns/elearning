@@ -35,16 +35,16 @@
 
         <div class="maincontentsection">
             <div id="symbolgame" class="symbolgame">
-                <div class="subtract-icon sniglet ">-</div>
-                <div class="divide-icon sniglet">÷</div>
-                <div class="plus-icon sniglet">+</div>
-                <div class="multiply-icon sniglet">x</div>
+                <div ondragover="allowDrop(event)"  ondrop="drop(event)" class="subtract-icon sniglet">-</div>
+                <div ondragover="allowDrop(event)"  ondrop="drop(event)" class="divide-icon sniglet">÷</div>
+                <div ondragover="allowDrop(event)"  ondrop="drop(event)" class="plus-icon sniglet">+</div>
+                <div ondragover="allowDrop(event)"  ondrop="drop(event)" class="multiply-icon sniglet">x</div>
             </div>
             <div class="draggable-words sniglet">
-                <div id="addicon" draggable="true"  ondragstart="drag(addicon)" class="add">Add</div>
-                <div id="multiplyicon" draggable="true"  ondragstart="drag(multiplyicon)" class="multiply">Multiply</div>
-                <div id="divideicon" draggable="true"  ondragstart="drag(divideicon)" class="divide">Divide</div>
-                <div id="subtracticon" draggable="true"  ondragstart="drag(subtracticon)" class="subtract">Subtract</div>
+                <div id="addicon" draggable="true" ondragstart="drag(event)" class="add">Add</div>
+                <div id="multiplyicon" draggable="true"  ondragstart="drag(event)" class="multiply">Multiply</div>
+                <div id="divideicon" draggable="true"  ondragstart="drag(event)" class="divide">Divide</div>
+                <div id="subtracticon" draggable="true"  ondragstart="drag(event)" class="subtract">Subtract</div>
             </div>
         </div>
 

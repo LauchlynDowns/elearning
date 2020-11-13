@@ -35,17 +35,21 @@
 
         <div class="maincontentsection">
             <div id="symbolgame" class="symbolgame">
-                <div ondragover="allowDrop(event)"  ondrop="drop(event)" class="subtract-icon sniglet">-</div>
-                <div ondragover="allowDrop(event)"  ondrop="drop(event)" class="divide-icon sniglet">÷</div>
-                <div ondragover="allowDrop(event)"  ondrop="drop(event)" class="plus-icon sniglet">+</div>
-                <div ondragover="allowDrop(event)"  ondrop="drop(event)" class="multiply-icon sniglet">x</div>
+                <div id="subtract" ondragover="allowDrop(event)" ondrop="drop(event)" class="subtract-icon sniglet">-</div>
+                <div id="divide" ondragover="allowDrop(event)" ondrop="drop(event)" class="divide-icon sniglet">÷</div>
+                <div id="add" ondragover="allowDrop(event)" ondrop="drop(event)" class="plus-icon sniglet">+</div>
+                <div id="multiply" ondragover="allowDrop(event)" ondrop="drop(event)" class="multiply-icon sniglet">x
+                </div>
             </div>
-            <div class="draggable-words sniglet">
+            <div id="draggablewords" class="draggable-words sniglet">
                 <div id="addicon" draggable="true" ondragstart="drag(event)" class="add">Add</div>
-                <div id="multiplyicon" draggable="true"  ondragstart="drag(event)" class="multiply">Multiply</div>
-                <div id="divideicon" draggable="true"  ondragstart="drag(event)" class="divide">Divide</div>
-                <div id="subtracticon" draggable="true"  ondragstart="drag(event)" class="subtract">Subtract</div>
+                <div id="multiplyicon" draggable="true" ondragstart="drag(event)" class="multiply">Multiply</div>
+                <div id="divideicon" draggable="true" ondragstart="drag(event)" class="divide">Divide</div>
+                <div id="subtracticon" draggable="true" ondragstart="drag(event)" class="subtract">Subtract</div>
+                <button id="checkbutton" class="button-gamepreview checkbutton hidden">Check</button>
             </div>
+            <h1 id="correctmessage" class="correctmessage maintext sniglet hidden">Well done! you got them all correct!</h1>
+            
         </div>
 
 

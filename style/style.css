@@ -374,3 +374,14 @@ html, body {
     
     
 }
+.hidden {
+    display: none;
+}
+.checkbutton {
+    font-size: 250%;
+    width: 100%;
+}
+.correctmessage {
+    width: 100%;
+    text-indent: 25%;
+}

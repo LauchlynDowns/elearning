@@ -182,7 +182,7 @@ html, body {
     -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
     box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .button-homepage:hover {
@@ -221,7 +221,7 @@ html, body {
     border-radius: 6vh;
     margin: 0 auto;
     margin-bottom: 1vh;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .button-gamepreview:hover {
@@ -353,7 +353,7 @@ html, body {
     justify-content: space-evenly;
     margin-top: 5%;
     z-index: 9;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .add, .subtract, .multiply, .divide {
@@ -370,25 +370,23 @@ html, body {
     position: relative;
     text-align: center;
     font-size: 500%;
-    
     outline: 3px solid black;
-    
     user-select: none;
-    
-    
 }
+
 .hidden {
     display: none;
 }
+
 .checkbutton {
     font-size: 250%;
     width: 100%;
 }
+
 .correctmessage {
     width: 100%;
     text-indent: 25%;
 }
-
 
 .addinggamearea {
     background-color: white;
@@ -399,4 +397,31 @@ html, body {
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
+}
+
+.sum {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answerbox {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+
+.answerinput {
+    border: 2px solid black;
+    width: 70%;
+    height: 10%;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 25px;
 }

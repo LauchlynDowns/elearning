@@ -14,7 +14,7 @@ const correctmessage = document.getElementById("correctmessage");
 let correctcounter = 0;
 //event listener to check for button click
 checkbutton.addEventListener("click", function () {
-    checkResult()
+    checkResult();
 });
 
 
@@ -58,7 +58,7 @@ function checkResult() {
     } else {
         var subtractcorrect = false;
         correctmessage.style.display = "none";
-    };
+    }
     //check divide
     var dividecontains = dividecontainer.children.item(0).id;
     if (dividecontains === "divideicon") {
@@ -74,7 +74,7 @@ function checkResult() {
     } else {
         var addcorrect = false;
         correctmessage.style.display = "none";
-    };
+    }
     //check multiply
     var multiplycontains = multiplycontainer.children.item(0).id;
     if (multiplycontains === "multiplyicon") {
@@ -82,7 +82,7 @@ function checkResult() {
     } else {
         var multiplycorrect = false;
         correctmessage.style.display = "none";
-    };
+    }
 
     if (subtractcorrect === true && dividecorrect === true && addcorrect === true && multiplycorrect === true) {
         checkbutton.style.display = "none";
@@ -94,3 +94,24 @@ function checkResult() {
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

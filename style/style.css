@@ -26,6 +26,7 @@
     font-size: 150%;
     text-align: center;
 }
+
 .undertext {
     height: 0vh;
     font-size: 200%;
@@ -290,9 +291,7 @@ html, body {
         background-color: #D4ECEE;
         border-right: 2px solid black;
     }
-    
 }
-
 
 .symbolgame {
     background-color: white;
@@ -387,7 +386,6 @@ html, body {
     border-radius: 25px;
 }
 
-
 a {
     text-decoration: none;
     display: block;
@@ -453,22 +451,38 @@ a {
         margin-top: 20%;
     }
 }
+
 .mininavbarcontainer {
     width: 100%;
     display: flex;
 }
+
 .mininavbar {
     outline: 2px solid black;
     height: 5vh;
     width: 50%;
 }
+
 .adding_symbolspage {
     background-color: #54E17C;
     width: 100vw;
     height: 95vh;
-    
 }
 
 .whitetext {
     color: white;
+}
+
+.newsletter-parent {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+margin-top: 5vh;
+}
+
+.newsletter {
+    width: 25vw;
+    height: 10vh;
+    text-align: center;
 }

@@ -425,3 +425,8 @@ html, body {
     text-align: center;
     border-radius: 25px;
 }
+
+
+a {
+    text-decoration: none;
+}

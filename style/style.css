@@ -390,6 +390,8 @@ html, body {
 
 a {
     text-decoration: none;
+    display: block;
+    color: inherit;
 }
 
 /*small screen*/
@@ -450,4 +452,23 @@ a {
         margin-left: 40%;
         margin-top: 20%;
     }
+}
+.mininavbarcontainer {
+    width: 100%;
+    display: flex;
+}
+.mininavbar {
+    outline: 2px solid black;
+    height: 5vh;
+    width: 50%;
+}
+.adding_symbolspage {
+    background-color: #54E17C;
+    width: 100vw;
+    height: 95vh;
+    
+}
+
+.whitetext {
+    color: white;
 }

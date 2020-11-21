@@ -26,6 +26,13 @@
     font-size: 150%;
     text-align: center;
 }
+.undertext {
+    height: 0vh;
+    font-size: 200%;
+    color: #346B31;
+    font-family: 'Sora', sans-serif;
+    text-align: center;
+}
 
 /*css for layout/flexbox*/
 
@@ -283,55 +290,9 @@ html, body {
         background-color: #D4ECEE;
         border-right: 2px solid black;
     }
+    
 }
 
-/*small screen*/
-
-@media only screen and (max-width: 760px) {
-    .navbarleft {
-        width: 20vw;
-        height: 12vh;
-    }
-    .link-container {
-        width: 100vw;
-        height: 12vh;
-        flex-direction: row;
-        border-bottom: 2px solid black;
-    }
-    .linkcontainer-link-container {
-        height: 100%;
-        width: 20vw;
-    }
-    .rightarea {
-        display: none;
-    }
-    .mainarea {
-        height: 100vh;
-        display: block;
-        overflow: scroll;
-    }
-    .homepage-button-container {
-        flex-direction: column;
-    }
-    .button-homepage {
-        width: 70%;
-    }
-    .gamepreviewcontainer {
-        flex-direction: column;
-        height: 100vh;
-    }
-    .gamepreview {
-        width: 80%;
-    }
-    .bottom-fotd-container {
-        width: 100%;
-        height: 20vh;
-        background-color: #8FD6A3;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-}
 
 .symbolgame {
     background-color: white;
@@ -429,4 +390,64 @@ html, body {
 
 a {
     text-decoration: none;
+}
+
+/*small screen*/
+
+@media only screen and (max-width: 760px) {
+    .navbarleft {
+        width: 20vw;
+        height: 12vh;
+    }
+    .link-container {
+        width: 100vw;
+        height: 12vh;
+        flex-direction: row;
+        border-bottom: 2px solid black;
+    }
+    .linkcontainer-link-container {
+        height: 100%;
+        width: 20vw;
+    }
+    .rightarea {
+        display: none;
+    }
+    .mainarea {
+        height: 100vh;
+        display: block;
+        overflow: scroll;
+    }
+    .homepage-button-container {
+        flex-direction: column;
+    }
+    .button-homepage {
+        width: 70%;
+    }
+    .gamepreviewcontainer {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .gamepreview {
+        width: 80%;
+    }
+    .bottom-fotd-container {
+        width: 100%;
+        height: 20vh;
+        background-color: #8FD6A3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .gamepreview {
+        width: 80vw;
+    }
+    .button-homepage {
+        width: 70vw;
+    }
+    .draggable-words {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 40%;
+        margin-top: 20%;
+    }
 }

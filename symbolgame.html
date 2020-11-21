@@ -11,7 +11,12 @@
 </head>
 
 <body>
-
+    <audio id="correct">
+        <source src="sounds/correct_sound.wav" type="audio/wav">
+    </audio>
+    <audio id="wrong">
+        <source src="sounds/wrong.mp3" type="audio/mp3">
+    </audio>
     <div class="mainarea">
         <div class="navbarleft">
             <div class="link-container">
@@ -35,12 +40,14 @@
 
         <div class="maincontentsection">
             <div id="symbolgame" class="symbolgame">
-                <div id="subtract" ondragover="allowDrop(event)" ondrop="drop(event)" class="subtract-icon sniglet">-</div>
+                <div id="subtract" ondragover="allowDrop(event)" ondrop="drop(event)" class="subtract-icon sniglet">-
+                </div>
                 <div id="divide" ondragover="allowDrop(event)" ondrop="drop(event)" class="divide-icon sniglet">÷</div>
                 <div id="add" ondragover="allowDrop(event)" ondrop="drop(event)" class="plus-icon sniglet">+</div>
                 <div id="multiply" ondragover="allowDrop(event)" ondrop="drop(event)" class="multiply-icon sniglet">x
                 </div>
             </div>
+            <p class="undertext">match each symbol with its name (drag and drop)</p>
             <div id="draggablewords" class="draggable-words sniglet">
                 <div id="addicon" draggable="true" ondragstart="drag(event)" class="add">Add</div>
                 <div id="multiplyicon" draggable="true" ondragstart="drag(event)" class="multiply">Multiply</div>
@@ -48,8 +55,10 @@
                 <div id="subtracticon" draggable="true" ondragstart="drag(event)" class="subtract">Subtract</div>
                 <button id="checkbutton" class="button-gamepreview checkbutton hidden">Check</button>
             </div>
-            <h1 id="correctmessage" class="correctmessage maintext sniglet hidden">Well done! you got them all correct!</h1>
-            
+
+            <h1 id="correctmessage" class="correctmessage maintext sniglet hidden">Well done! you got them all correct!
+            </h1>
+
         </div>
 
 

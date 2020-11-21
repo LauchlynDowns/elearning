@@ -10,6 +10,8 @@ const dividecontainer = document.getElementById("divide");
 const multiplycontainer = document.getElementById("multiply");
 const addcontainer = document.getElementById("add");
 const correctmessage = document.getElementById("correctmessage");
+const correct = document.getElementById("correct");
+const incorrect = document.getElementById("wrong");
 //declare variable to hold number of correct elements
 let correctcounter = 0;
 //event listener to check for button click
@@ -87,10 +89,13 @@ function checkResult() {
     if (subtractcorrect === true && dividecorrect === true && addcorrect === true && multiplycorrect === true) {
         checkbutton.style.display = "none";
         correctmessage.style.display = "block";
+        correct.play();
+
     } else {
         console.log("some are not correct, keep trying!");
         checkbutton.innerHTML = "some are not correct, keep trying!";
         correctmessage.style.display = "none";
+        incorrect.play();
 
     }
 }
